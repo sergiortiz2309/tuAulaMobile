@@ -1,0 +1,46 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<br>
+<br>
+
+<ion-content padding>
+
+    <div text-center>
+        <ion-img width=120 height=80 src="../assets/imgs/icono.png"></ion-img>
+      </div>
+      <br>
+      <br>
+      <br>
+    
+      <ion-list>
+
+          <ion-item>
+            <ion-label>Ingresa tu usuario o email</ion-label>
+            <ion-input type="text" value=""></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label>Ingresa tu contraseña</ion-label>
+            <ion-input type="password"></ion-input>
+          </ion-item>
+        
+        </ion-list>
+    
+      <br>
+      
+      <button ion-button block color="primary" (click)= "navegarACategoriesselection()">INGRESAR</button>
+      <br>
+      <button ion-button block color="secondary" (click)= "navegarAInscription()">REGISTRATE</button>
+      <br>
+      <button ion-button block color="secondary" (click)=  "navegarACursos()">VER CURSOS</button>
+      
+      <button ion-button clear item-right>Olvidé mi contraseña</button>
+    
+
+</ion-content>

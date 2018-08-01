@@ -1,0 +1,7 @@
+{
+  "name": "tuaula-app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
