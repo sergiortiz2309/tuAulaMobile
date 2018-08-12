@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { CursosPage } from '../cursos/cursos';
 import { CursosEstudiantePage } from '../cursos-estudiante/cursos-estudiante';
+import { CursosinsPage } from '../cursosins/cursosins';
 
 /**
  * Generated class for the MainpagePage page.
@@ -24,8 +25,8 @@ export class MainpagePage {
     console.log('ionViewDidLoad MainpagePage');
   }
 
-  navegarACursos() {
-    this.navCtrl.push(CursosPage); 
+  navegarACursosEstudianteInscrito() {
+    this.navCtrl.push(CursosinsPage); 
   }
  
   navegarACursosEstudiante() {

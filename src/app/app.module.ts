@@ -12,6 +12,8 @@ import { CategoriesselectionPage } from '../pages/categoriesselection/categories
 import { MainpagePage } from '../pages/mainpage/mainpage';
 import { CursosPage } from '../pages/cursos/cursos';
 import { CursosEstudiantePage } from '../pages/cursos-estudiante/cursos-estudiante';
+import { CursosinsPage } from '../pages/cursosins/cursosins';
+import { InglesbPage } from '../pages/inglesb/inglesb';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,10 @@ import { CursosEstudiantePage } from '../pages/cursos-estudiante/cursos-estudian
     CategoriesselectionPage,
     MainpagePage,
     CursosPage,
-    CursosEstudiantePage
+    CursosEstudiantePage,
+    CursosinsPage,
+    InglesbPage
+    
   ],
   imports: [
     BrowserModule,
@@ -37,7 +42,9 @@ import { CursosEstudiantePage } from '../pages/cursos-estudiante/cursos-estudian
     CategoriesselectionPage, 
     MainpagePage, 
     CursosPage,
-    CursosEstudiantePage
+    CursosEstudiantePage,
+    CursosinsPage, 
+    InglesbPage
   ],
   providers: [
     StatusBar,

@@ -1,0 +1,173 @@
+<!--
+  Generated template for the CursosinsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Cursos Estudiantes Inscritos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <button ion-button color="light" (click)="navegarAMainPage()">Inicio</button>
+    <br>
+    <br>
+    <div text-center>
+        <ion-img width=100 height=60 src="../assets/imgs/icono.png"></ion-img>
+    </div>
+    
+  <div text-center>   
+  <p>¿Qué te gustaría estudiar?</p>
+  </div>
+
+    <ion-item>
+      <ion-label color="primary">Precio</ion-label>
+      <ion-select [(ngModel)]="Precio">
+        <ion-option value="g">Gratuito</ion-option>
+        <ion-option value="p">20000-50000</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Zona</ion-label>
+      <ion-select [(ngModel)]="Zona">
+        <ion-option value="88">UPZ 88 - El Refugio</ion-option>
+        <ion-option value="89">UPZ 89 - San Isidro Patios</ion-option>
+        <ion-option value="90">UPZ 90 - Pardo Rubio</ion-option>
+        <ion-option value="97">UPZ 97 - Chicó Lago</ion-option>
+        <ion-option value="99">UPZ 99 - Chapinero Centro</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Modalidad</ion-label>
+      <ion-select [(ngModel)]="Modalidad">
+        <ion-option value="pr">Presencial</ion-option>
+        <ion-option value="v">Virtual</ion-option>
+        <ion-option value="h">Híbrido</ion-option>
+      </ion-select>
+    </ion-item>
+    <br>
+    <div text-center>
+    <p>CURSOS RECOMENDADOS</p>
+    </div>
+
+    <ion-item-sliding>
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="../assets/imgs/ingles.png">
+          </ion-avatar>
+          
+          
+          <h2>INGLÉS BÁSICO</h2>
+          <p>Modalidad: Virtual</p>
+          <p>Ubicación: No Aplica</p>
+          <p>Duración: 10 horas</p>
+          <button ion-button clear (click)="navegarAInglesb()">MÁS INFORMACIÓN</button>
+          
+
+          <ion-avatar item-right>
+          <div text-center>
+            <p>4.5</p>
+            <ion-icon name="star" color="primary"></ion-icon>
+            <ion-icon name="star" color="primary"></ion-icon>
+            <ion-icon name="star" color="primary"></ion-icon>
+            <ion-icon name="star" color="primary"></ion-icon>
+            <ion-icon name="star-half" color="primary"></ion-icon>
+
+            
+          </div>
+        </ion-avatar>
+        </ion-item>
+
+        <ion-item>
+            <ion-avatar item-start>
+              <img src="../assets/imgs/baile.png">
+            </ion-avatar>
+            <h2>CURSO DE BAILE</h2>
+            <h2>SALSA BÁSICO</h2>
+            <p>Modalidad: Presencial</p>
+            <p>Ubicación:Casa de la</p>
+            <p>Juventud Chapinero</p>
+            <p>Duración: 25 horas</p>
+            <button ion-button clear (click)="navegarAInglesb()">MÁS INFORMACIÓN</button>
+
+            <ion-avatar item-right>
+                <div text-center>
+                  <p>4.5</p>
+                  <ion-icon name="star" color="primary"></ion-icon>
+                  <ion-icon name="star" color="primary"></ion-icon>
+                  <ion-icon name="star" color="primary"></ion-icon>
+                  <ion-icon name="star" color="primary"></ion-icon>
+                  <ion-icon name="star-half" color="primary"></ion-icon>
+      
+                  
+                </div>
+            </ion-avatar>
+        </ion-item>
+
+        <ion-item>
+            <ion-avatar item-start>
+              <img src="../assets/imgs/ddhh.png">
+            </ion-avatar>
+            <h2>TALLER DDHH</h2>
+            <p>Modalidad: Presencial</p>
+            <p>Ubicación: Casa Igualdad</p>
+            <p>de Oportunidades para la</p>
+            <p>Mujer - UPZ99</p>
+            <p>Duración: 10 horas</p>
+            <button ion-button clear (click)="navegarAInglesb()">MÁS INFORMACIÓN</button>
+
+            <ion-avatar item-right>
+                <div text-center>
+                  <p>4.5</p>
+                  <ion-icon name="star" color="primary"></ion-icon>
+                  <ion-icon name="star" color="primary"></ion-icon>
+                  <ion-icon name="star" color="primary"></ion-icon>
+                  <ion-icon name="star" color="primary"></ion-icon>
+                  <ion-icon name="star-half" color="primary"></ion-icon>
+      
+                  
+                </div>
+            </ion-avatar>
+
+        </ion-item>
+
+        <ion-item>
+            <ion-avatar item-start>
+              <img src="../assets/imgs/programacion.png">
+            </ion-avatar>
+            <h2>PROGRAMACIÓN BÁSICA</h2>
+            <p>Modalidad: Virtual</p>
+            <p>Ubicación: No Aplica</p>
+            <p>Duración: 15 horas</p>
+            <button ion-button clear (click)="navegarAInglesb()">MÁS INFORMACIÓN</button>
+            
+            <ion-avatar item-right>
+                <div text-center>
+                  <p>4.0</p>
+                  <ion-icon name="star" color="primary"></ion-icon>
+                  <ion-icon name="star" color="primary"></ion-icon>
+                  <ion-icon name="star" color="primary"></ion-icon>
+                  <ion-icon name="star" color="primary"></ion-icon>
+                  
+                  
+                </div>
+            </ion-avatar>
+
+        </ion-item>
+        
+      </ion-item-sliding>
+
+
+</ion-content>
