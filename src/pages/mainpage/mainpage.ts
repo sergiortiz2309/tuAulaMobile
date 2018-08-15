@@ -18,6 +18,8 @@ import { CursosinsPage } from '../cursosins/cursosins';
 })
 export class MainpagePage {
 
+  user = "clases";
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

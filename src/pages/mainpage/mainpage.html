@@ -6,20 +6,73 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Mainpage</ion-title>
+  <ion-navbar hideBackButton>
+    <ion-title>Dashboard</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
 
-    <div text-center>
-        <ion-img width=120 height=80 src="../assets/imgs/icono.png"></ion-img>
+   
+    <ion-toolbar padding>
+      <ion-segment [(ngModel)]="user" color="primary">
+        <ion-segment-button value="clases" autofocus>
+        Mis Clases
+        </ion-segment-button>
+        <ion-segment-button value="sugerencias">
+        Mis sugerencias
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+
+    <div [ngSwitch]="user">
+      <ion-list *ngSwitchCase="'clases'">
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="../assets/imgs/ingles.png">
+          </ion-avatar>
+          <h2>INGLÉS BÁSICO</h2>
+          <p>Modalidad: Virtual</p>
+          <p>Ubicación: No Aplica</p>
+          <p>Duración: 10 horas</p>
+        </ion-item>
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="../assets/imgs/baile.png">
+          </ion-avatar>
+          <h2>CURSO DE BAILE - SALSA</h2>
+          <p>Modalidad: Presencial</p>
+          <p>Ubicación:Casa de Juventud Chapinero</p>
+          <p>Duración: 25 horas</p>
+      </ion-item>
+      </ion-list>
+    
+      <ion-list *ngSwitchCase="'sugerencias'">
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="../assets/imgs/ddhh.png">
+          </ion-avatar>
+          <h2>TALLER DDHH</h2>
+          <p>Modalidad: Presencial</p>
+          <p>Ubicación:Casa Igualdad de Oportunidades para la Mujer - UPZ99</p>
+          <p>Duración: 10 horas</p>
+      </ion-item>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="../assets/imgs/programacion.png">
+        </ion-avatar>
+        <h2>PROGRAMACIÓN BÁSICA</h2>
+        <p>Modalidad: Virtual</p>
+        <p>Ubicación: No Aplica</p>
+        <p>Duración: 15 horas</p>
+    </ion-item>
+      </ion-list>
     </div>
 
-    <div text-center>
+    
+    <!-- <div text-center>
       <button ion-button item-center (click)="navegarACursosEstudiante()">TUS CURSOS</button>
     </div>
     <div>
@@ -33,7 +86,7 @@
     <div text-center>
         <button ion-button clear item-center>RECURSOS BIBLIOGRÁFICOS</button>
     </div>
-    </div>
+    </div> -->
 
     
 
