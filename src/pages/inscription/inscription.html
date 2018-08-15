@@ -13,10 +13,10 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding style="background-color: rgba(0,140,208,0.7);">
 
     <div text-center>
-        <ion-img width=120 height=80 src="../assets/imgs/icono.png"></ion-img>
+        <ion-img width=200 height=120 src="../assets/imgs/log.png" style="background-color: rgba(0,140,208,0.7);"></ion-img>
       </div>
 
       <ion-list>
@@ -31,56 +31,53 @@
             </ion-item>  
 
             <ion-item>
-                <ion-label>Direccion</ion-label>
+                <ion-label>Dirección</ion-label>
                 <ion-input type="text" value=""></ion-input>
             </ion-item>   
 
             <ion-item>
                 <ion-label>UPZ</ion-label>
-                <ion-input type="text" value=""></ion-input>
-            </ion-item>
-          
-          <ion-item>
-            <ion-label>Username</ion-label>
-            <ion-input type="text" value=""></ion-input>
-          </ion-item>
+                <ion-select [(ngModel)]="documento">
+                    <ion-option value="88">UPZ 88 - El Refugio</ion-option>
+                    <ion-option value="89">UPZ 89 - San Isidro Patios</ion-option>
+                    <ion-option value="90">UPZ 90 - Pardo Rubio</ion-option>
+                    <ion-option value="97">UPZ 97 - Chicó Lago</ion-option>
+                    <ion-option value="99">UPZ 99 - Chapinero Centro</ion-option>         
+                </ion-select>
+              </ion-item>      
         
           <ion-item>
-            <ion-label>Password</ion-label>
+            <ion-label>Contraseña</ion-label>
             <ion-input type="password"></ion-input>
           </ion-item>
 
           <ion-item>
-              <ion-label>Confirmacion de Password</ion-label>
+              <ion-label>Confirmación de contraseña</ion-label>
               <ion-input type="password"></ion-input>
             </ion-item>
         
+          <ion-item>
+            <ion-label>Tipo de Documento</ion-label>
+            <ion-select [(ngModel)]="documento">
+              <ion-option value="cc">CC</ion-option>
+              <ion-option value="ti">TI</ion-option>
+              <ion-option value="ce">CE</ion-option>             
+            </ion-select>
+          </ion-item>
         </ion-list>
 
-        <p>Tipo de documento</p>
-
-        <ion-list>
-
-          <ion-item>
-            <ion-label>Cédula de Ciudadanía</ion-label>
-            <ion-checkbox [(ngModel)]="pepperoni"></ion-checkbox>
-          </ion-item>
-        
-          <ion-item>
-            <ion-label>Tarjeta de Identidad</ion-label>
-            <ion-checkbox [(ngModel)]="sausage"></ion-checkbox>
-          </ion-item>
-        
-          <ion-item>
-            <ion-label>Cédula de Extranjería</ion-label>
-            <ion-checkbox [(ngModel)]="mushrooms"></ion-checkbox>
-          </ion-item>
-        
-        </ion-list>
 
         <button ion-button block color="primary" (click)= "navegarALogin()">SIGUIENTE</button>
         <br>
-        <p item-left>¿YA TIENES UNA CUENTA?</p>
-        <button ion-button clear item-right (click)= "navegarALogin()">INICIA SESIÓN</button>
-
+       
+        <ion-grid>
+            <ion-row>
+              <ion-col col-7>
+                <p item-left style="color: white;">¿YA TIENES UNA CUENTA?</p> 
+              </ion-col>
+              <ion-col col-5>
+                <button ion-button clear item-right (click)= "navegarAInscription()" >INICIA SESIÓN</button>
+              </ion-col>
+          </ion-row>
+          </ion-grid>
 </ion-content>

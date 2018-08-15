@@ -5,34 +5,34 @@
     </ion-navbar>
 </ion-header>
 
-<br>
-<br>
-<br>
-<br>
-<ion-content padding>
+<ion-content padding style="background-color: rgba(0,140,208,0.7);">
   <div text-center>
-    <ion-img width=200 height=120 src="../assets/imgs/icono.png"></ion-img>
+    <ion-img width=200 height=120 src="../assets/imgs/log.png" style="background-color: rgba(0,140,208,0.7);"></ion-img>
   </div>
   <br>
   <br>
   <br>
 
   <div text-center>
-    <p>Amplia tus conocimientos practicos y teoricos en las areas que desees. Conocimiento en la palma de tu mano</p>  
+    <p style="color: white;">Amplia tus conocimientos practicos y teoricos en las areas que desees. Conocimiento en la palma de tu mano</p>  
   </div>
 
   <br>
   <br>
-  
-  
   
   <button ion-button block color="primary" (click)= "navegarALogin()">INGRESAR</button>
   <br>
   <br>
-  <p item-left>¿NO TIENES UNA CUENTA?</p>
-
- 
-  <button ion-button clear item-right (click)= "navegarAInscription()" >REGÍSTRATE</button>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-8>
+        <p item-left style="color: white;">¿NO TIENES UNA CUENTA?</p> 
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button clear item-right (click)= "navegarAInscription()" >REGÍSTRATE</button>
+      </ion-col>
+  </ion-row>
+  </ion-grid>
 
  
 

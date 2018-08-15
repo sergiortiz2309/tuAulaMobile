@@ -18,7 +18,7 @@
   </ion-header>
 
 
-<ion-content padding>
+<ion-content>
 
     <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
@@ -30,38 +30,45 @@
     <div text-center>
         <ion-img width=100 height=60 src="../assets/imgs/icono.png"></ion-img>
     </div>
-    
-
-  <p>¿Qué te gustaría estudiar?</p>
-
-    <ion-item>
-      <ion-label color="primary">Precio</ion-label>
-      <ion-select [(ngModel)]="Precio">
-        <ion-option value="g">Gratuito</ion-option>
-        <ion-option value="p">20000-50000</ion-option>
-      </ion-select>
-    </ion-item>
-
-    <ion-item>
-      <ion-label color="primary">Zona</ion-label>
-      <ion-select [(ngModel)]="Zona">
-        <ion-option value="88">UPZ 88 - El Refugio</ion-option>
-        <ion-option value="89">UPZ 89 - San Isidro Patios</ion-option>
-        <ion-option value="90">UPZ 90 - Pardo Rubio</ion-option>
-        <ion-option value="97">UPZ 97 - Chicó Lago</ion-option>
-        <ion-option value="99">UPZ 99 - Chapinero Centro</ion-option>
-      </ion-select>
-    </ion-item>
-
-    <ion-item>
-      <ion-label color="primary">Modalidad</ion-label>
-      <ion-select [(ngModel)]="Modalidad">
-        <ion-option value="pr">Presencial</ion-option>
-        <ion-option value="v">Virtual</ion-option>
-        <ion-option value="h">Híbrido</ion-option>
-      </ion-select>
-    </ion-item>
-
+     
+    <ion-grid>
+      <ion-row justify-content-center>
+        <ion-col col-12 >¿Qué te gustaría estudiar?</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-4>
+          <ion-item>
+            <ion-label floating color="primary">Precio</ion-label>
+            <ion-select [(ngModel)]="Precio">
+              <ion-option value="g">Gratuito</ion-option>
+              <ion-option value="p">20000-50000</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col col-3>
+          <ion-item>
+            <ion-label floating color="primary">Zona</ion-label>
+            <ion-select [(ngModel)]="Zona">
+              <ion-option value="88">UPZ 88 - El Refugio</ion-option>
+              <ion-option value="89">UPZ 89 - San Isidro Patios</ion-option>
+              <ion-option value="90">UPZ 90 - Pardo Rubio</ion-option>
+              <ion-option value="97">UPZ 97 - Chicó Lago</ion-option>
+              <ion-option value="99">UPZ 99 - Chapinero Centro</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col col-5>
+          <ion-item>
+            <ion-label floating color="primary">Modalidad</ion-label>
+            <ion-select [(ngModel)]="Modalidad">
+              <ion-option value="pr">Presencial</ion-option>
+              <ion-option value="v">Virtual</ion-option>
+              <ion-option value="h">Híbrido</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
     <ion-item-sliding>
         <ion-item>
           <ion-avatar item-start>
